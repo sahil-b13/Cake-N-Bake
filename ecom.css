@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Condensed:ital,wght@1,300&family=Sorts+Mill+Goudy&display=swap');
+
+/*fontawesome.com used for fonts*/
+/*unsplash.com for images*/
+
+
+.header .search-bar label:hover {
+	color:  #f91106;
+}
+
+
+/*home section begins*/
+.home {
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+	background: url(whiteforest.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-top: 18rem;
+	padding-bottom: 14rem;
+}
+
+.home .content {
+	text-align: right;
+	width: 100rem
+}
+
+.home .content h3{
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: black;
+	font-size: 4rem;
+}
+
+.home .content p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	padding: 2rem 0;
+	line-height: 1.8;
+}
+
+.heading {
+
+	text-align: center;
+	padding: 2rem 0;
+	padding-bottom: 3rem;
+	font-size: 3.5rem;
+	color: black;
+}
+
+.features .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(35rem, 10fr)); 
+	gap:2.5rem;
+}	
+
+.features .container .box {
+	padding: 2rem 2rem;
+	background: #fff;
+	outline-offset: -2rem;
+	text-align: center;
+}
+
+.features .container .box:hover {
+	outline: var(--outline-hover)
+	outline-offset: 0rem;
+}
+
+.features .container .box h3 {
+	padding-left: 2%;
+	font-weight: 900;
+	font-size: 2.5rem;
+	line-height: 1.8; 
+	color: black;
+}
+
+.features .container .box img {
+	border: 1px solid black;
+	margin: 1rem 0;
+	height: 18rem;
+}
+
+.features .container .box p {
+	font-size: 1.5rem;
+	line-height: 1.8;
+	padding: 1rem 0;
+}
+
+
+/*product section begins*/
+
+.menu-head {
+
+	text-align: center;
+	padding: 2rem 0;
+	padding-bottom: 3rem;
+	font-size: 3.5rem;
+	color: black;
+}
+
+.items-container{
+	padding: 0;
+    display: grid;
+    grid-template-columns: repeat( 2, minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.food-items {
+	display: grid;
+	position: relative;
+	grid-template-rows: auto 1	fr;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0,0,0,0,1);
+	margin: 0 20px;
+}
+
+.food-items img{
+	position: relative;
+	width: 100%;
+	max-height: 100%;
+	border: 1px solid red;
+	border-radius: 15px 15px 0 0;
+}
+
+.info {
+	padding: 20px 10px;
+	display: grid;
+	grid-template-rows: auto 1fr 50px;
+	grid-row-gap: 15px;
+}
+
+.desc {
+	display: grid;
+	grid-template-columns: auto; 
+}
+
+.desc h5 {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.price {
+	text-align: left;
+}
+
+.info p {
+	color: #6f6f6f;
+	font-size: 15px;
+	line-height: 28px;
+	font-weight: 400;
+	align-self: stretch;
+}
+
+.info button {
+	background-color: #cb202d;
+	border: none;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	width: 180px;
+}
+
+
+/*Review begins*/
+.review-head {
+	text-align: center;
+	padding: 2rem 0;
+	padding-bottom: 3rem;
+	font-size: 3.5rem;
+	color: black;
+}
+
+.review .review-box {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.review .review-box .boxx {
+	flex: 1 1 30rem;
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+	border-radius: .5rem;
+	padding: 3rem 2rem;
+	position: relative;
+}
+
+.review .review-box .boxx .fa-quote-right {
+	position: absolute;
+	bottom: 3rem; right: 3rem;
+	font-size: 6rem;
+}
+
+.review .review-box .boxx .stars i{
+	color: red;
+	font-size: 2rem;
+}
+
+.review .review-box .boxx p{
+	color: black;
+	line-height: 1.5;
+	padding-top: 2rem;
+	font-size: 1.5rem;
+}
+
+.review .review-box .boxx .user {
+	display: flex;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+.review .review-box .boxx .user img{
+	height: 6rem;
+	width: 6rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 1rem;
+}
+
+.review .review-box .boxx .user h3 {
+	font-size: 2rem;
+}
+
+.review .review-box .boxx .user h3 {
+	font-size: 1.5rem;
+	color: #999;
+}
+
+
+/*Footer begins*/
+footer {
+	position: relative;
+	width: 100%
+	height: auto;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+footer .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer .container .abt-us{
+	margin-right: 30px;
+}
+
+footer .container .abt-us {
+	width: 40%;
+}
+
+footer .container .abt-us h2 {
+	position: relative;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+footer .container .abt-us h2:before {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+}
+
+.social {
+	margin-top: 20px;
+	display: flex;
+}
+
+.social li{
+	list-style: none;
+}
+
+.social li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #F8F8FF;
+    padding: 30px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 50px;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 900;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 1px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #000080;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: black;
+    background-color: red;
+}
+
+h3{
+	font-weight: 100;
+	font-size: 1.5rem;
+	padding-top: 5%;
+	padding-left: 42%;
+}
